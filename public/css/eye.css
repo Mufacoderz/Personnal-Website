@@ -1,6 +1,7 @@
 .eye-container {
     display: flex;
     gap: 40px;
+    z-index:999;
 }
 
 .eye {

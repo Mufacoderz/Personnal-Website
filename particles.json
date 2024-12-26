@@ -1,56 +1,90 @@
 {
-    "particles": {
-      "number": {
-        "value": 100,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        }
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false
-      },
-      "size": {
-        "value": 3,
-        "random": true
-      },
-      "line_linked": {
+  "particles": {
+    "number": {
+      "value": 150,
+      "density": {
         "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false
+        "value_area": 800
       }
     },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
-        }
+    "color": {
+      "value": ["#00ffff", "#ff00ff", "#ffff00"]
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
       }
     },
-    "retina_detect": true
+    "opacity": {
+      "value": 0.6,
+      "random": true
+    },
+    "size": {
+      "value": 4,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#ffffff",
+      "opacity": 0.8,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 4,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "bounce",
+      "bounce": true
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": ["grab", "bubble"]
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 200,
+        "size": 6,
+        "duration": 2,
+        "opacity": 0.8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 100,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true,
+  "background": {
+    "color": "#0d47a1",
+    "position": "50% 50%",
+    "repeat": "no-repeat",
+    "size": "cover"
   }
-  
+}
