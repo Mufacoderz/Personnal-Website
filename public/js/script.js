@@ -8,3 +8,5 @@ function openMainPage() {
 
 
 document.getElementById('start-button').addEventListener('click', openMainPage);
+
+

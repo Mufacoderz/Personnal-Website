@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="overflow-hidden">
+
+<!-- Vanta background -->
+<div id="vanta-globe" class="absolute top-0 left-0 w-full h-screen z-[-1]"></div>
+
+<div class="content flex flex-col justify-center items-start h-screen px-8 text-white z-10 ml-[15%]">
+    <!-- Name -->
+    <div class="name text-4xl font-bold tracking-wide leading-tight">
+        Muhammad Fadil
+    </div>
+
+    <!-- Professions animated text -->
+    <div class="profession mt-4 text-xl font-normal opacity-80">
+        <span id="profession-text" class="inline-block"></span>
+    </div>
+
+    <!-- Bio -->
+    <div class="bio text-lg mt-6 max-w-md leading-relaxed opacity-85">
+        Welcome to my personal website. Here, you'll find more about my journey in the world of technology and innovation.
+    </div>
+</div>
+
+<script>
+// Vanta.js animation
+VANTA.GLOBE({
+  el: document.getElementById('vanta-globe'),
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3f6dff,
+  color2: 0xd8f2,
+  backgroundColor: 0x1b153c
+});
+
+// Profession texts array
+const professions = [
+    "Front-End Developer",
+    "Information Systems Student",
+    "React Developer",
+    "Chat GPT Programmer"
+];
+
+let currentProfessionIndex = 0;
+
+// Function to type the text one by one
+function typeProfession() {
+    const professionTextElement = document.getElementById('profession-text');
+    let profession = professions[currentProfessionIndex];
+    let i = 0;
+    
+    professionTextElement.textContent = ''; // Clear previous text
+
+    // Typing effect
+    const typingInterval = setInterval(() => {
+        professionTextElement.textContent += profession[i];
+        i++;
+        if (i === profession.length) {
+            clearInterval(typingInterval);
+            setTimeout(() => {
+                currentProfessionIndex = (currentProfessionIndex + 1) % professions.length;
+                typeProfession(); // Restart the typing animation with the next profession
+            }, 1000); // Wait before starting the next profession
+        }
+    }, 50); // Speed of typing
+}
+
+// Start the typing effect
+typeProfession();
+</script>
+
+</body>
+</html>

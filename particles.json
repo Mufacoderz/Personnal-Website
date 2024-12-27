@@ -8,7 +8,7 @@
       }
     },
     "color": {
-      "value": ["#00ffff", "#ff00ff", "#ffff00"]
+      "value": "#00d8f2"
     },
     "shape": {
       "type": "circle",
@@ -28,7 +28,7 @@
     "line_linked": {
       "enable": true,
       "distance": 120,
-      "color": "#ffffff",
+      "color": "#3f6dff",
       "opacity": 0.8,
       "width": 1
     },
@@ -82,7 +82,7 @@
   },
   "retina_detect": true,
   "background": {
-    "color": "#0d47a1",
+    "color": "#1b153c",
     "position": "50% 50%",
     "repeat": "no-repeat",
     "size": "cover"

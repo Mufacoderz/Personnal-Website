@@ -1,14 +1,14 @@
 .eye-container {
     display: flex;
     gap: 40px;
-    z-index:999;
+    z-index: 999;
 }
 
 .eye {
     width: 100px;
     height: 100px;
     background: radial-gradient(circle, #ffffff, #d1d1d1);
-    border: 3px solid #4e5d6c;
+    border: 3px solid #3f6dff; /* Warna border biru terang */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 .pupil {
     width: 40px;
     height: 40px;
-    background: radial-gradient(circle, #0078d7, #003c70);
+    background: radial-gradient(circle, #3f6dff, #00d8f2); /* Gradasi pupil biru ke cyan */
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     position: absolute;

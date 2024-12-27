@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet" href="css/output.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
 </head>
+
 <body>
-    <h1 class="bg-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste atque eius rem in molestias assumenda libero nostrum ducimus quia ipsam minus, nulla dignissimos. Ullam inventore maiores distinctio in expedita!</h1>
-    
+    <section class="relative">
+        <div id="vanta-globe" class="absolute top-0 left-0 w-full h-screen z-[-1]"></div>
+
+        <div class="content flex flex-col justify-center items-start h-screen px-8 text-white z-10 ml-[15%]">
+           
+            <div class="name text-4xl font-bold tracking-wide leading-tight">
+                Muhammad Fadil
+            </div>
+
+            <div class="profession mt-4 text-xl font-normal opacity-80">
+                <span id="profession-text" class="inline-block"></span>
+            </div>
+
+            <div class="bio text-lg mt-6 max-w-md leading-relaxed opacity-85">
+                Welcome to my personal website. Here, you'll find more about my journey in the world of technology and
+                innovation.
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-screen bg-white halamanDua">
+        <div class="flex justify-center items-center h-full text-black text-2xl">
+            Halaman Kedua
+        </div>
+    </section>
+
+
+
+
+    <script src="js/main.js"></script>
+
+
 </body>
+
 </html>
