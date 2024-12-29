@@ -12,7 +12,7 @@ VANTA.GLOBE({
     scaleMobile: 1.00,
     color: 0x3f6dff,
     color2: 0xd8f2,
-    backgroundColor: 0x1b153c
+    backgroundColor: 0x272524
 });
 
 
