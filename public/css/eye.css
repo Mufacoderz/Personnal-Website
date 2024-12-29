@@ -8,7 +8,7 @@
     width: 100px;
     height: 100px;
     background: radial-gradient(circle, #ffffff, #d1d1d1);
-    border: 3px solid #3f6dff; /* Warna border biru terang */
+    border: 3px solid #000222; /* Warna border biru terang */
     border-radius: 50%;
     display: flex;
     justify-content: center;

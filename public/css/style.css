@@ -11,7 +11,7 @@ body {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background: #1b153c;
+    background: #272524;
     color: #fff;
     position: relative;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 #start-button {
-    background: #009ffd;
+    background: #0149FF;
     color: #fff;
     border: none;
     padding: 1rem 2rem;
@@ -56,7 +56,7 @@ body {
 }
 
 #start-button:hover {
-    background: #2a2a72;
+    background: #000222;
     transform: scale(1.1);
 }
 
