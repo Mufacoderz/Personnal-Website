@@ -26,3 +26,62 @@
     position: absolute;
     transition: all 0.1s ease-out;
 }
+
+@media (max-width: 768px) {
+    .eye-container {
+        gap: 20px; /* Mengurangi jarak antar mata */
+    }
+
+    .eye {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pupil {
+        width: 30px;
+        height: 30px;
+    }
+
+    .start-container h1 {
+        font-size: 24px;
+    }
+
+    .start-container p {
+        font-size: 16px;
+    }
+
+    #start-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eye-container {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .eye {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pupil {
+        width: 25px;
+        height: 25px;
+    }
+
+    .start-container h1 {
+        font-size: 20px;
+    }
+
+    .start-container p {
+        font-size: 14px;
+    }
+
+    #start-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

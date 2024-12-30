@@ -34,8 +34,17 @@
     </section>
 
     <section class="block sm:hidden">
-      <i class="fa-solid fa-bars text-white"></i>
+      <i class="fa-solid fa-bars text-white" onclick="openNavLink()"></i>
+      <section id="hamburgerNav" class=" absolute z-10 right-0 top-10 bg-primary text-white p-1 rounded-lg" style="display: none;">
+        <ul class="flex flex-col gap-5">
+          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#home" onclick="closeNavLink()" >Home</a></li>
+          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#about" onclick="closeNavLink()">About</a></li>
+          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#skills" onclick="closeNavLink()">Skills</a></li>
+          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg" ><a href="#service" onclick="closeNavLink()">Services</a></li>
+        </ul>
+      </section>
     </section>
+
 
     <section class="hidden sm:block menu-nav">
       <section class="flex items-center space-x-6 ">
@@ -58,7 +67,8 @@
 
   <section class="relative halamanSatu" id="home">
     <!-- Globe Background -->
-    <div id="vanta-globe" class="w-full h-[70vh] sm:h-screen sm:w-full hidden md:block" style="position: fixed !important;"></div>
+    <div id="vanta-globe" class="w-full h-[70vh] sm:h-screen sm:w-full hidden md:block"
+      style="position: fixed !important;"></div>
 
     <section class="relative">
       <div
@@ -98,61 +108,77 @@
 
   <!-- BAGIAN ABOUT PAGE -->
 
-  <section id="about" class=" relative w-full h-auto py-24 flex items-center justify-center m-0 text-[#fdfcfd] flex-col gap-24  halamanDua" style="background: linear-gradient(135deg, #FFFFFF, #E0E0E0, #F5F5F5);">
-    <div class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
-      <img src="assets/hero.jpg" class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] rounded-[inherit]"/>
+  <section id="about"
+    class=" relative w-full h-auto py-24 flex items-center justify-center m-0 text-[#fdfcfd] flex-col gap-24  halamanDua"
+    style="background: linear-gradient(135deg, #FFFFFF, #E0E0E0, #F5F5F5);">
+    <div class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl"
+      style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+      <img src="assets/hero.jpg" class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] rounded-[inherit]" />
       <div>
         <h2 class="text-[22px] mt-0 mr-[30px] mb-[10px]">Muhammad Fadil</h2>
         <h3 class="text-[14px] m-0 opacity-75">Frontend Developer</h3>
         <p class="text-[13px] mb-[30px] opacity-50">
           Transforming ideas into realities, creating interfaces that inspire
-          and engage users dreams. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos blanditiis nisi adipisci cum fugiat dolor enim quia? Quos mollitia nam ducimus quae aut fugiat molestiae nostrum sit dolore at.
+          and engage users dreams. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos blanditiis nisi
+          adipisci cum fugiat dolor enim quia? Quos mollitia nam ducimus quae aut fugiat molestiae nostrum sit dolore
+          at.
         </p>
         <div class="socials flex items-center gap-2">
           <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
-            <i class="fa-brands fa-instagram hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+            <i
+              class="fa-brands fa-instagram hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
           </button>
-          <button  class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
-            <i class="fa-brands fa-facebook hover:text-secondary hover:bg-primary transitionrelative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+          <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
+            <i
+              class="fa-brands fa-facebook hover:text-secondary hover:bg-primary transitionrelative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
           </button>
-          <button  class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
-            <i class="fa-brands fa-twitter hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+          <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
+            <i
+              class="fa-brands fa-twitter hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <div class="card flex items-center sm:flex-row-reverse w-[75vw] bg-[#252524] rounded-3xl " style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
-      <img src="assets/main.jpg" class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] sm:mr-[-60px] sm:ml-[30px] rounded-[inherit]"/>
+    <div class="card flex items-center sm:flex-row-reverse w-[75vw] bg-[#252524] rounded-3xl "
+      style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+      <img src="assets/main.jpg"
+        class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] sm:mr-[-60px] sm:ml-[30px] rounded-[inherit]" />
       <div class="md:ml-4">
         <h2 class="text-[22px] mt-0 mr-[30px] mb-[10px] ">Education</h2>
         <div>
           <h3 class="text-[14px] m-0 opacity-75">Formal</h3>
           <ul class="text-[13px] mb-[30px] opacity-50 list-disc pl-5 space-y-2">
             <li>
-              Sultan Idris State Islamic University Samarinda: Majoring in Information System <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, obcaecati pariatur sapiente maiores minima coonstruckysgyat.</p>
+              Sultan Idris State Islamic University Samarinda: Majoring in Information System <p>Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Officiis, obcaecati pariatur sapiente maiores minima
+                coonstruckysgyat.</p>
             </li>
             <li>
-              Muhammadiyah Vocational High School: Majoring in Computer and Network Engineering <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum incidunt quasi illum, quia laborum.</p>
+              Muhammadiyah Vocational High School: Majoring in Computer and Network Engineering <p>Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Quod eum incidunt quasi illum, quia laborum.</p>
             </li>
             <li>
-              Al-Istiqomah Junior High School <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugit suscipit provident culpa accusantium repellat.</p>
+              Al-Istiqomah Junior High School <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                fugit suscipit provident culpa accusantium repellat.</p>
             </li>
           </ul>
-        
+
           <h3 class="text-[14px] m-0 opacity-75">Non-Formal</h3>
           <ul class="text-[13px] mb-[30px] opacity-50 list-disc pl-5 space-y-2">
             <li>
-              Dicoding Academy <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis architecto fugit aliquid blanditiis.</p>
+              Dicoding Academy <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis architecto fugit
+                aliquid blanditiis.</p>
             </li>
           </ul>
         </div>
-        
-        
-        
+
+
+
       </div>
     </div>
   </section>
+
 
   <!-- BAGIAN SKILLS PAGE -->
 
@@ -162,6 +188,7 @@
     </div>
   </section>
 
+
   <!-- BAGIAN SERVICE PAGE -->
 
   <section id="service" class=" relative w-full h-screen bg-yellow-500 halamanEmpat ">
@@ -170,6 +197,7 @@
     </div>
   </section>
 
+
   <!-- BAGIAN CONTACT PAGE -->
 
   <section id="contact" class=" relative w-full h-screen bg-green-500 halamanLima ">
@@ -177,6 +205,8 @@
       Halaman kelima
     </div>
   </section>
+
+
   <!-- BAGIAN FOOTER -->
 
 

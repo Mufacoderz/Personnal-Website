@@ -52,3 +52,12 @@ function typeProfession() {
 
 // Start the typing effect
 typeProfession();
+
+
+//open dan close menu hamburger
+function openNavLink() {
+    document.getElementById("hamburgerNav").style.display = "block";
+}
+function closeNavLink() {
+    document.getElementById("hamburgerNav").style.display = "none";
+}

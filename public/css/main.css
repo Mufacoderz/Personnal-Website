@@ -78,6 +78,9 @@ html, body {
       box-shadow: none;
       margin: -140px 0 30px 0;
     }
+    .bio{
+      text-align:justify;
+    }
   }
 
 
