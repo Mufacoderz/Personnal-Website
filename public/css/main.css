@@ -79,3 +79,9 @@ html, body {
       margin: -140px 0 30px 0;
     }
   }
+
+
+.card:hover {
+  transform: translateY(-10px); /* Terangkat sedikit */
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4), 0px 10px 15px rgba(0, 0, 0, 0.2); /* Shadow lebih besar */
+}
