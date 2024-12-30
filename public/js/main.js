@@ -23,7 +23,7 @@ const professions = [
     "Front-End Developer",
     "Information Systems Student",
     "React Developer",
-    "Chat GPT Programmer"
+    "Programmer Chat GPT"
 ];
 
 let currentProfessionIndex = 0;
@@ -61,3 +61,9 @@ function openNavLink() {
 function closeNavLink() {
     document.getElementById("hamburgerNav").style.display = "none";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const nav = document.querySelector("nav");
+    nav.classList.remove("-translate-y-full", "opacity-0");
+  });

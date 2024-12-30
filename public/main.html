@@ -21,38 +21,40 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- BAGIAN NAVIGASI -->
-  <nav class="flex justify-between items-center w-full p-4 fixed top-0 left-0 z-20 bg-transparent">
+  <nav class="flex justify-between items-center w-full p-4 fixed top-0 left-0 z-20 backdrop-brightness-75 transform -translate-y-full opacity-0 transition-all duration-700 ease-in-out animate-slide-down">
+
 
     <section class="flex ml-7 items-center">
       <img src="assets/logoHero.png" alt="logo" class="w-14 h-auto">
-      <h1 class="text-primary font-bold text-2xl">MUFADEV</h1>
+      <h1 class="text-primary font-bold text-xl md:text-2xl">MUFADEV</h1>
     </section>
 
-    <section class="block sm:hidden">
+    <section class="block md:hidden">
       <i class="fa-solid fa-bars text-white" onclick="openNavLink()"></i>
       <section id="hamburgerNav" class=" absolute z-10 right-0 top-10 bg-primary text-white p-1 rounded-lg" style="display: none;">
         <ul class="flex flex-col gap-5">
           <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#home" onclick="closeNavLink()" >Home</a></li>
           <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#about" onclick="closeNavLink()">About</a></li>
-          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#skills" onclick="closeNavLink()">Skills</a></li>
           <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg" ><a href="#service" onclick="closeNavLink()">Services</a></li>
+          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#portofolio" onclick="closeNavLink()">Portofolio</a></li>
         </ul>
       </section>
     </section>
 
 
-    <section class="hidden sm:block menu-nav">
+    <section class="hidden md:block menu-nav">
       <section class="flex items-center space-x-6 ">
         <ul class="flex space-x-6 text-primary font-semibold">
           <li><a href="#home" class="hover:text-white transition">Home</a></li>
           <li><a href="#about" class="hover:text-white transition">About</a></li>
-          <li><a href="#skills" class="hover:text-white transition">Skills</a></li>
           <li><a href="#service" class="hover:text-white transition">Service</a></li>
+          <li><a href="#portofolio" class="hover:text-white transition">Portofolio</a></li>
         </ul>
         <button class="bg-primary text-white px-6 py-2 rounded-xl hover:bg-secondary transition"
           onclick="window.open('https://wa.me/6281348726973?text=Halo%20saya%20mau%20tanya!', '_blank')">Contact
@@ -69,24 +71,24 @@
     <!-- Globe Background -->
     <div id="vanta-globe" class="w-full h-[70vh] sm:h-screen sm:w-full hidden md:block"
       style="position: fixed !important;"></div>
-
-    <section class="relative">
+  
+    <section class="relative animate-slideInLeft delay-200">
       <div
-        class="content flex flex-col justify-center items-center sm:items-start h-screen px-6 sm:px-8 text-white z-10 md:ml-32 bg-[#252524] md:bg-transparent">
-        <div class="name text-3xl sm:text-4xl font-bold tracking-wide leading-tight sm:ml-10">
+        class="content flex flex-col justify-center items-center sm:items-start h-screen px-6 sm:px-8 text-white z-10 md:ml-32 bg-[#252524] md:bg-transparent animate-fadeIn">
+        <div class="name text-3xl sm:text-4xl font-bold tracking-wide leading-tight sm:ml-10 ">
           Muhammad Fadil
         </div>
-
-        <div class="profession mt-4 text-lg sm:text-xl font-normal opacity-80 sm:ml-10">
+  
+        <div class="profession mt-4 text-lg sm:text-xl font-normal opacity-80 sm:ml-10 ">
           <span id="profession-text" class="inline-block"></span>
         </div>
-
-        <div class="bio text-base sm:text-lg mt-6 max-w-md leading-relaxed opacity-85 sm:ml-10">
+  
+        <div class="bio text-base sm:text-lg mt-6 max-w-md leading-relaxed opacity-85 sm:ml-10 ">
           Welcome to my personal website. Here, you'll find more about my journey in the world of technology and
           innovation.
         </div>
-
-        <div class="btn-cta sm:ml-10 lg:mt-5 flex items-start mt-5">
+  
+        <div class="btn-cta sm:ml-10 lg:mt-5 flex items-start mt-5 ">
           <a href="https://github.com/Mufacoderz" target="_blank">
             <i
               class="fa-brands fa-github border-2 border-gray-300 rounded-full p-3 text-2xl w-12 h-12 flex items-center justify-center hover:bg-blue-500 hover:text-blue-950 hover:border-blue-950 transition"></i></a>
@@ -95,13 +97,10 @@
             <i
               class="fa-brands fa-linkedin border-2 border-gray-300 rounded-full p-3 text-2xl ml-5 w-12 h-12 flex items-center justify-center hover:bg-blue-500 hover:text-blue-950 hover:border-blue-950 transition"></i></a>
         </div>
-
-
-
-
       </div>
     </section>
   </section>
+  
 
 
 
@@ -111,7 +110,7 @@
   <section id="about"
     class=" relative w-full h-auto py-24 flex items-center justify-center m-0 text-[#fdfcfd] flex-col gap-24  halamanDua"
     style="background: linear-gradient(135deg, #FFFFFF, #E0E0E0, #F5F5F5);">
-    <div class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl"
+    <div data-aos="fade-right" data-aos-duration="3000" class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl "
       style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
       <img src="assets/hero.jpg" class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] rounded-[inherit]" />
       <div>
@@ -140,7 +139,7 @@
       </div>
     </div>
 
-    <div class="card flex items-center sm:flex-row-reverse w-[75vw] bg-[#252524] rounded-3xl "
+    <div data-aos="fade-left" data-aos-duration="3000" class="card flex items-center sm:flex-row-reverse w-[75vw] bg-[#252524] rounded-3xl "
       style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
       <img src="assets/main.jpg"
         class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] sm:mr-[-60px] sm:ml-[30px] rounded-[inherit]" />
@@ -172,28 +171,80 @@
             </li>
           </ul>
         </div>
-
-
-
       </div>
     </div>
-  </section>
 
-
-  <!-- BAGIAN SKILLS PAGE -->
-
-  <section id="skills" class=" relative w-full h-screen bg-blue-500 halamanTiga ">
-    <div class="flex justify-center items-center h-full text-black text-2xl">
-      Halaman Ketiga
+    <!-- BAGIAN SKILLS PAGE -->
+<section data-aos="flip-up" data-aos-duration="3000" id="skills" class="py-20 bg-[#252524] rounded-3xl shadow-lg w-[75vw]" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-white mb-12">My Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+      <!-- HTML -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-700 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-html5 text-6xl text-orange-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">HTML</h3>
+      </div>
+      <!-- CSS -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-css3-alt text-6xl text-blue-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">CSS</h3>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-js-square text-6xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">JavaScript</h3>
+      </div>
+      <!-- Tailwind -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-teal-400 hover:to-teal-600 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-tailwindcss text-6xl text-cyan-500"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">Tailwind CSS</h3>
+      </div>
+      <!-- React -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-react text-6xl text-blue-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">React</h3>
+      </div>
+      <!-- Node.js -->
+      <div class="skill-card bg-white p-8 rounded-xl shadow-xl hover:bg-gradient-to-r hover:from-green-500 hover:to-green-700 hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+        <div class="flex justify-center items-center mb-6">
+          <i class="fa-brands fa-node text-6xl text-green-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800">Node.js</h3>
+      </div>
     </div>
+  </div>
+</section>
+
+  </section>
+  
+
   </section>
 
 
+  
   <!-- BAGIAN SERVICE PAGE -->
-
+  
   <section id="service" class=" relative w-full h-screen bg-yellow-500 halamanEmpat ">
     <div class="flex justify-center items-center h-full text-black text-2xl">
       Halaman keempat
+    </div>
+  </section>
+  
+  <!-- BAGIAN PORTO PAGE -->
+
+  <section id="portofolio" class=" relative w-full h-screen bg-blue-500 halamanTiga ">
+    <div class="flex justify-center items-center h-full text-black text-2xl">
+      Halaman Ketiga
     </div>
   </section>
 
@@ -213,6 +264,10 @@
 
 
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
