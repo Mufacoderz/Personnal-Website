@@ -46,6 +46,9 @@ html, body {
       width: 100%;
       text-align: center;
       flex-direction: column;
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
     }
   
     .card h2 {
