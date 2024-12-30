@@ -706,6 +706,14 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -736,6 +744,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-2 {
+  max-width: 0.5rem;
 }
 
 .border-collapse {
@@ -818,6 +830,18 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[24\] {
+  border-radius: 24;
+}
+
+.rounded-\[24px\] {
+  border-radius: 24px;
 }
 
 .border {
@@ -1179,6 +1203,10 @@ video {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:bg-transparent {
