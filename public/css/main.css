@@ -78,12 +78,7 @@ html, body {
     #skills{
       flex-direction:column;
     }
-    .curve-second{
-      top:-50px;
-    }
-    .curve-first{
-      top:-50px;
-    }
+   
   }
 
 
