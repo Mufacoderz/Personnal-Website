@@ -608,6 +608,18 @@ video {
   position: relative;
 }
 
+.-top-24 {
+  top: -6rem;
+}
+
+.-top-36 {
+  top: -9rem;
+}
+
+.-top-44 {
+  top: -11rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -624,6 +636,34 @@ video {
   top: 2.5rem;
 }
 
+.-top-0 {
+  top: -0px;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.-top-52 {
+  top: -13rem;
+}
+
+.-top-32 {
+  top: -8rem;
+}
+
+.-top-56 {
+  top: -14rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
+.-top-28 {
+  top: -7rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -636,6 +676,10 @@ video {
   z-index: 1;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -645,8 +689,16 @@ video {
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-\[10px\] {
@@ -1020,6 +1072,28 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#f9f9f9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#572323\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(87 35 35 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[f9f9f9\] {
+  background-color: f9f9f9;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1049,6 +1123,11 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -1136,6 +1215,10 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1198,6 +1281,16 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
 
 .text-green-400 {
@@ -1532,6 +1625,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:-top-36 {
+    top: -9rem;
+  }
+
+  .md\:-top-52 {
+    top: -13rem;
+  }
+
+  .md\:-top-44 {
+    top: -11rem;
+  }
+
   .md\:ml-32 {
     margin-left: 8rem;
   }
@@ -1559,6 +1664,18 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-top-44 {
+    top: -11rem;
+  }
+
+  .lg\:-top-52 {
+    top: -13rem;
+  }
+
+  .lg\:-top-56 {
+    top: -14rem;
+  }
+
   .lg\:mt-5 {
     margin-top: 1.25rem;
   }

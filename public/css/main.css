@@ -16,20 +16,6 @@ html, body {
     transition: border-radius 0.3s;
   }
   
-  .card h2 {
-    font-size: 22px;
-    font-weight: 400;
-  }
-  
-  .card h3 {
-    font-weight: 400;
-    opacity: 0.75;
-  }
-  
-  .card p {
-    font-weight: 400;
-  }
-  
   
   
   .socials > button > i {
@@ -75,6 +61,9 @@ html, body {
   }
   
   @media (width <= 440px) {
+    .card{
+      margin-top: 25px;
+    }
     .card img {
       height: 50vw;
       width: 50vw;
@@ -89,11 +78,17 @@ html, body {
     #skills{
       flex-direction:column;
     }
+    .curve-second{
+      top:-75px;
+    }
+    .curve-first{
+      top:-65px;
+    }
   }
 
 
 .card:hover, .container:hover {
-  transform: translateY(-10px); /* Terangkat sedikit */
+  transform: translateY(-15px); /* Terangkat sedikit */
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4), 0px 10px 15px rgba(0, 0, 0, 0.2); /* Shadow lebih besar */
 }
 
