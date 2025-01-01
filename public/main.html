@@ -319,7 +319,7 @@
     </div>
     <section class="containerr mx-auto px-4 py-8 bg-transparent w-[75vw] ">
       <h1 class="text-2xl text-white font-bold text-center mb-8 mt-8 lg:mt-32">Our Services</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9  mb-20">
   
         <!-- Card 1 -->
         <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-900 hover:scale-[1.03] ">
@@ -331,7 +331,7 @@
             <h2 class="text-lg font-bold mb-2">UI/UX Design</h2>
             <p class="text-gray-600">Build high-quality and scalable web applications.</p>
           </div>
-          <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()" role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
@@ -347,7 +347,7 @@
             <h2 class="text-lg font-bold mb-2">Web Development</h2>
             <p class="text-gray-600">Build high-quality and scalable web applications.</p>
           </div>
-          <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
@@ -362,7 +362,7 @@
             <h2 class="text-lg font-bold mb-2">SEO Optimization</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-          <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
@@ -376,7 +376,7 @@
             <h2 class="text-lg font-bold mb-2">App Development</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-          <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
@@ -390,7 +390,7 @@
             <h2 class="text-lg font-bold mb-2">Data Analystic</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
@@ -404,10 +404,11 @@
             <h2 class="text-lg font-bold mb-2">Cloud Computing</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
+
         <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-900 hover:scale-[1.03]">
           <div class="relative">
             <img src="assets/security.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
@@ -417,10 +418,11 @@
             <h2 class="text-lg font-bold mb-2">Cyber Security Service</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
+
         <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-900 hover:scale-[1.03]">
           <div class="relative">
             <img src="assets/sedotwc.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
@@ -430,10 +432,11 @@
             <h2 class="text-lg font-bold mb-2">Sedot WC</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
+
         <div class="bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-900 hover:scale-[1.03]">
           <div class="relative">
             <img src="assets/consult.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
@@ -443,14 +446,39 @@
             <h2 class="text-lg font-bold mb-2">IT Consultant</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
   
       </div>
     </section>
-</section>
+
+    <!-- modal -->
+    <div id="modal" class="modal backdrop-brightness-50 w-full h-screen fixed top-0 left-0 z-50 hidden ">
+      <div class="p-6 bg-white w-[90%] max-w-2xl h-auto rounded-lg shadow-lg relative m-auto top-[15%] md:top-[25%] transform scale-95 transition-transform duration-300 ease-in-out">
+        
+        <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 focus:outline-none">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">UI/UX Design</h2>
+          <p class="text-gray-600 mb-6">
+            Build high-quality and scalable web applications. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequuntur, deserunt similique nemo ipsam repellat inventore eligendi tempore quisquam maxime ducimus non
+            quos cum quia libero mollitia. A doloribus ipsum fugit!
+          </p>
+          
+          <button class="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition-all">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
 
 
   <!-- BAGIAN PORTO PAGE -->

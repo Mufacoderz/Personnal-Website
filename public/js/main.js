@@ -62,6 +62,13 @@ function closeNavLink() {
     document.getElementById("hamburgerNav").style.display = "none";
 }
 
+function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const nav = document.querySelector("nav");
