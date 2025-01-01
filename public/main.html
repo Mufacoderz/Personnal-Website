@@ -35,7 +35,7 @@
   <nav
     class="flex justify-between items-center w-full px-4 py-1 fixed top-0 left-0 z-20 backdrop-brightness-75 transform -translate-y-full opacity-0 transition-all duration-700 ease-in-out animate-slide-down">
 
-    <section class="flex ml-7 items-center">
+    <section class="flex md:ml-5 items-center">
       <img src="assets/logoHero.png" alt="logo" class=" w-8 md:w-14 h-auto ">
       <h1 class="text-primary font-bold text-[12px] md:text-xl lg:text-2xl">MUFADEV</h1>
     </section>
@@ -45,13 +45,13 @@
       <section id="hamburgerNav" class=" absolute z-10 right-0 top-10 bg-primary text-white p-1 rounded-lg"
         style="display: none;">
         <ul class="flex flex-col gap-5">
-          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#home"
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#home"
               onclick="closeNavLink()">Home</a></li>
-          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#about"
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#about"
               onclick="closeNavLink()">About</a></li>
-          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
               href="#service" onclick="closeNavLink()">Services</a></li>
-          <li class="cursor-pointer w-[25vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
               href="#portofolio" onclick="closeNavLink()">Portofolio</a></li>
         </ul>
       </section>
@@ -66,8 +66,10 @@
           <li><a href="#service" class="hover:text-white transition">Service</a></li>
           <li><a href="#portofolio" class="hover:text-white transition">Portofolio</a></li>
         </ul>
-        <button class="bg-primary text-white rounded-xl hover:bg-secondary hover:text-primary transition w-10 h-10 text-[25px] flex items-center justify-center"
-          onclick="window.open('https://wa.me/6281348726973?text=Halo%20saya%20mau%20tanya!', '_blank')"><i class="fa-brands fa-whatsapp"></i></button>
+        <button
+          class="bg-primary text-white rounded-xl hover:bg-secondary hover:text-primary transition w-10 h-10 text-[25px] flex items-center justify-center"
+          onclick="window.open('https://wa.me/6281348726973?text=Halo%20saya%20mau%20tanya!', '_blank')"><i
+            class="fa-brands fa-whatsapp"></i></button>
       </section>
     </section>
   </nav>
@@ -125,9 +127,11 @@
 
     <div class="curve-first absolute -top-20 md:-top-40 lg:-top-56 w-full">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
-          <path fill="#f9f9f9" fill-opacity="1" d="M0,96L80,112C160,128,320,160,480,181.3C640,203,800,213,960,213.3C1120,213,1280,203,1360,197.3L1440,192V320H0Z"></path>
+        <path fill="#f9f9f9" fill-opacity="1"
+          d="M0,96L80,112C160,128,320,160,480,181.3C640,203,800,213,960,213.3C1120,213,1280,203,1360,197.3L1440,192V320H0Z">
+        </path>
       </svg>
-  </div>
+    </div>
 
     <div data-aos="fade-right" data-aos-duration="3000"
       class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl "
@@ -313,163 +317,183 @@
 
   <section id="service" class="relative w-full h-auto bg-[#252524] halamanEmpat">
     <div class="curve-second absolute -top-20 md:-top-36 lg:-top-44 w-full ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
-            <path fill="#252524" fill-opacity="1" d="M0,128 C480,224 960,32 1440,128 L1440,320 L0,320 Z"></path>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
+        <path fill="#252524" fill-opacity="1" d="M0,128 C480,224 960,32 1440,128 L1440,320 L0,320 Z"></path>
+      </svg>
     </div>
     <section class="containerr mx-auto px-4 py-8 bg-transparent w-[75vw]  ">
       <h1 class="text-2xl text-white font-bold text-center mb-8 mt-8 lg:mt-32">Our Services</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 ">
-  
+
         <!-- Card 1 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-[1.03]"  style="box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-[1.03]"
+          style="box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/uiux.jpg" alt="Web Development" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">UI/UX Design</h2>
             <p class="text-gray-600">Build high-quality and scalable web applications.</p>
           </div>
-          <div role="button" onclick="openModal()" role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()" role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
-        
-  
+
+
         <!-- Card 2 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/webdev.jpg" alt="Web Development" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">Web Development</h2>
             <p class="text-gray-600">Build high-quality and scalable web applications.</p>
           </div>
-          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
-  
+
         <!-- Card 3 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/seo.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">SEO Optimization</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/appdev.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">App Development</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-          <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/data.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">Data Analystic</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/cloud.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">Cloud Computing</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/security.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">Cyber Security Service</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/sedotwc.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">Sedot WC</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
 
-        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]" style="
+        <div class="bg-white shadow-md rounded-lg overflow-hidden  hover:scale-[1.03]"
+          style="
           box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
           <div class="relative">
             <img src="assets/consult.jpg" alt="SEO Optimization" class="w-full h-auto object-cover">
-            
+
           </div>
           <div class="p-4">
             <h2 class="text-lg font-bold mb-2">IT Consultant</h2>
             <p class="text-gray-600">Optimize your website for better search engine rankings.</p>
           </div>
-           <div role="button" onclick="openModal()" class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition">
             Learn More
           </div>
         </div>
-  
+
       </div>
     </section>
 
     <!-- modal -->
     <div id="modal" class="modal backdrop-brightness-50 w-full h-screen fixed top-0 left-0 z-50 hidden ">
-      <div class="p-6 bg-white w-[90%] max-w-2xl h-auto rounded-lg shadow-lg relative m-auto top-[15%] md:top-[25%] transform scale-95 transition-transform duration-300 ease-in-out">
-        
-        <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 focus:outline-none">
+      <div
+        class="p-6 bg-white w-[90%] max-w-2xl h-auto rounded-lg shadow-lg relative m-auto top-[15%] md:top-[25%] transform scale-95 transition-transform duration-300 ease-in-out">
+
+        <button onclick="closeModal()"
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 focus:outline-none">
           <i class="fa-solid fa-xmark text-2xl"></i>
         </button>
-        
+
         <div class="text-center">
           <h2 class="text-2xl font-bold mb-4 text-gray-800">UI/UX Design</h2>
           <p class="text-gray-600 mb-6">
@@ -477,35 +501,67 @@
             Consequuntur, deserunt similique nemo ipsam repellat inventore eligendi tempore quisquam maxime ducimus non
             quos cum quia libero mollitia. A doloribus ipsum fugit!
           </p>
-          
+
           <button class="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition-all">
             Order Now
           </button>
         </div>
       </div>
     </div>
-    
+
 
   </section>
 
 
-  <div class="tumbal relative w-full h-12 md:h-24 lg:h-28 bg-[#252524] md:bg-transparent ">
+  <div class="tumbal relative w-full h-20 md:h-28 lg:h-32 bg-[#252524] ">
 
   </div>
 
   <!-- BAGIAN PORTO PAGE -->
 
-  
-  <section id="portofolio" class=" relative w-full h-screen bg-primary halamanTiga ">
-    <div class="curve-second absolute -top-20 md:-top-36 lg:-top-48 w-full ">
+
+  <section id="portofolio" class="relative w-full h-screen bg-primary halamanTiga">
+    <div class="curve-second absolute -top-20 md:-top-36 lg:-top-48 w-full">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
-        <path fill="#1573FF" fill-opacity="1" d="M0,160 C180,240 360,80 540,160 C720,240 900,80 1080,160 C1260,240 1440,80 1440,80 L1440,320 L0,320 Z"></path>
+        <path fill="#1573FF" fill-opacity="1"
+          d="M0,160 C180,240 360,80 540,160 C720,240 900,80 1080,160 C1260,240 1440,80 1440,80 L1440,320 L0,320 Z">
+        </path>
       </svg>
-  </div>
-    <div class="flex justify-center items-center h-full text-black text-2xl">
-      Halaman Ketiga
+    </div>
+    <div class="flex flex-col items-center justify-center h-full px-6 text-center">
+      <h2 class="text-2xl text-white font-bold text-center mb-8 mt-8 ">My Projects</h2>
+      <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+          <img src="https://via.placeholder.com/300" alt="Project 1"
+            class="rounded-md w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Personnal Website</h3>
+          <p class="text-gray-600 text-sm mb-4">Short description about the project goes here. It explains the purpose and technology used.</p>
+          <a href="https://personnal-website-topaz.vercel.app/" class="text-primary font-medium hover:underline">View Details</a>
+        </div>
+        <!-- Project Card 2 -->
+        <div
+          class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+          <img src="https://via.placeholder.com/300" alt="Project 2"
+            class="rounded-md w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Submission Dicoding</h3>
+          <p class="text-gray-600 text-sm mb-4">Tugas akhir dari kelas pemrograman web dasar Dicoding Academy, menggunakan semantik HTML dan Responsif CSS</p>
+          <a href="https://mufacoderz.github.io/Website-Projek-Dicoding/" class="text-primary font-medium hover:underline">View Details</a>
+        </div>
+        <!-- Project Card 3 -->
+        <div
+          class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+          <img src="https://via.placeholder.com/300" alt="Project 3"
+            class="rounded-md w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+          <p class="text-gray-600 text-sm mb-4">Short description about the project goes here. It explains the purpose and technology used.</p>
+          <a href="#" class="text-primary font-medium hover:underline">View Details</a>
+        </div>
+      </div>
     </div>
   </section>
+  
 
 
   <!-- BAGIAN CONTACT PAGE -->
@@ -518,9 +574,9 @@
 
 
   <!-- BAGIAN FOOTER -->
-   <footer>
+  <footer>
 
-   </footer>
+  </footer>
 
 
 
