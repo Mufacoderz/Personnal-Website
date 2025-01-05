@@ -2,50 +2,678 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description"
-        content="Muhammad Fadil is a skilled Frontend Developer specializing in HTML, CSS, JavaScript, Tailwind CSS, and React.">
-    <meta name="keywords"
-        content="Frontend Developer, HTML, CSS, JavaScript, Tailwind, React, Web Development, Web Design">
-    <meta name="author" content="Muhammad Fadil">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Muhammad Fadil - Frontend Developer">
-    <meta property="og:description"
-        content="Explore the personal website of Muhammad Fadil, a passionate frontend developer specializing in modern web technologies such as React, Tailwind CSS, and more.">
-    <meta property="og:image" content="https://personnal-website-topaz.vercel.app/assets/logoHero.png">
-    <meta property="og:url" content="https://personnal-website-topaz.vercel.app/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Muhammad Fadil - Frontend Developer">
-    <meta name="twitter:description"
-        content="Explore the personal website of Muhammad Fadil, a passionate frontend developer specializing in modern web technologies such as React, Tailwind CSS, and more.">
-    <meta name="twitter:image" content="https://personnal-website-topaz.vercel.app/assets/logoHero.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description"
+    content="Muhammad Fadil is a skilled Frontend Developer specializing in HTML, CSS, JavaScript, Tailwind CSS, and React.">
+  <meta name="keywords"
+    content="Frontend Developer, HTML, CSS, JavaScript, Tailwind, React, Web Development, Web Design">
+  <meta name="author" content="Muhammad Fadil">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Muhammad Fadil - Frontend Developer">
+  <meta property="og:description"
+    content="Explore the personal website of Muhammad Fadil, a passionate frontend developer specializing in modern web technologies such as React, Tailwind CSS, and more.">
+  <meta property="og:image" content="https://personnal-website-topaz.vercel.app/assets/logoHero.png">
+  <meta property="og:url" content="https://personnal-website-topaz.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Fadil - Frontend Developer">
+  <meta name="twitter:description"
+    content= "Explore the personal website of Muhammad Fadil, a passionate frontend developer specializing in modern web technologies such as React, Tailwind CSS, and more.">
+  <meta name="twitter:image" content="assets/logoHero.png">
+
+  <title>MUFADEV</title>
+  <link rel="icon" type="image/png" href="https://personnal-website-topaz.vercel.app/assets/logoHero.png" />
+
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 
 
-    <title>MUFADEV</title>
-    <link rel="icon" type="image/png" href="assets/logoHero.png" />
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/output.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<body id="start-page">
+<body>
+  <!-- BAGIAN NAVIGASI -->
+  <nav
+    class="flex justify-between items-center w-full px-4 py-1 fixed top-0 left-0 z-20 backdrop-brightness-75 transform -translate-y-full opacity-0 transition-all duration-700 ease-in-out animate-slide-down">
 
-    <div id="particles-js"></div>
+    <section class="flex md:ml-5 items-center">
+      <img src="assets/logoHero.png" alt="logo" class=" w-8 md:w-14 h-auto ">
+      <h1 class="text-primary font-bold text-[12px] md:text-xl lg:text-2xl">MUFADEV</h1>
+    </section>
+
+    <section class="block md:hidden">
+      <i class="fa-solid fa-bars text-white" onclick="openNavLink()"></i>
+      <section id="hamburgerNav" class=" absolute z-10 right-0 top-10 bg-primary text-white p-1 rounded-lg"
+        style="display: none;">
+        <ul class="flex flex-col gap-5">
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#home"
+              onclick="closeNavLink()">Home</a></li>
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a href="#about"
+              onclick="closeNavLink()">About</a></li>
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
+              href="#service" onclick="closeNavLink()">Services</a></li>
+          <li class="cursor-pointer w-[35vw] text-center hover:bg-secondary p-1 transition rounded-lg"><a
+              href="#portofolio" onclick="closeNavLink()">Portofolio</a></li>
+        </ul>
+      </section>
+    </section>
 
 
-    <div class="start-container">
-        <h1>Muhammad Fadil</h1>
-        <p>Welcome to My Personal Website</p>
-        <button id="start-button" onclick="openMainPage()">Start</button>
+    <section class="hidden md:block menu-nav">
+      <section class="flex items-center space-x-6 ">
+        <ul class="flex space-x-6 text-primary font-semibold">
+          <li><a href="#home" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#service" class="hover:text-white transition">Service</a></li>
+          <li><a href="#portofolio" class="hover:text-white transition">Portofolio</a></li>
+        </ul>
+        <button
+          class="bg-primary text-white rounded-xl hover:bg-secondary hover:text-primary transition w-10 h-10 text-[25px] flex items-center justify-center"
+          onclick="window.open('https://wa.me/6281348726973?text=Halo%20saya%20mau%20tanya!', '_blank')"><i
+            class="fa-brands fa-whatsapp"></i></button>
+      </section>
+    </section>
+  </nav>
+
+
+
+  <!-- BAGIAN LANDING PAGE -->
+
+  <section class="relative halamanSatu" id="home">
+    <!-- Globe Background -->
+    <div id="vanta-globe" class="w-full h-[70vh] sm:h-screen sm:w-full hidden md:block"
+      style="position: fixed !important;"></div>
+
+    <section class="relative">
+      <div
+        class="content flex flex-col justify-center items-center sm:items-start h-screen px-6 sm:px-8 text-white z-10 md:ml-32 bg-[#252524] md:bg-transparent animate-fadeIn">
+        <div
+          class="name text-3xl sm:text-4xl font-bold tracking-wide leading-tight sm:ml-10 animate-slideInLeft delay-200">
+          Muhammad Fadil
+        </div>
+
+        <div class="profession mt-4 text-lg sm:text-xl font-normal opacity-80 sm:ml-10 animate-fadeIn delay-200">
+          <span id="profession-text" class="inline-block"></span>
+        </div>
+
+        <div
+          class="bio text-base sm:text-lg mt-6 max-w-md leading-relaxed opacity-85 sm:ml-10 animate-slideInLeft delay-200">
+          Welcome to my personal website. Here, you'll find more about my journey in the world of technology and
+          innovation.
+        </div>
+
+        <div class="btn-cta sm:ml-10 lg:mt-5 flex items-start mt-5 animate-slideInLeft delay-200">
+          <a href="https://github.com/Mufacoderz" target="_blank">
+            <i
+              class="fa-brands fa-github border-2 border-gray-300 rounded-full p-3 text-2xl w-12 h-12 flex items-center justify-center hover:bg-primary hover:text-secondary hover:border-blue-950  transition"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-fadil-1264b82a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">
+            <i
+              class="fa-brands fa-linkedin border-2 border-gray-300 rounded-full p-3 text-2xl ml-5 w-12 h-12 flex items-center justify-center hover:bg-primary hover:text-secondary hover:border-blue-950"></i></a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+
+  <div class="tumbal relative w-full h-12 md:h-24 lg:h-28 bg-[#252524] md:bg-transparent animate-fadeIn">
+
+  </div>
+
+  <!-- BAGIAN ABOUT PAGE -->
+
+  <section id="about"
+    class=" relative w-full h-auto py-24 flex items-center justify-center m-0 text-[#fdfcfd] flex-col gap-24 bg-[#f9f9f9]  halamanDua">
+
+    <div class="curve-first absolute -top-20 md:-top-40 lg:-top-56 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
+        <path fill="#f9f9f9" fill-opacity="1"
+          d="M0,96L80,112C160,128,320,160,480,181.3C640,203,800,213,960,213.3C1120,213,1280,203,1360,197.3L1440,192V320H0Z">
+        </path>
+      </svg>
+    </div>
+
+    <div data-aos="fade-right" data-aos-duration="3000"
+      class="card flex items-center w-[75vw] bg-[#252524] rounded-3xl "
+      style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+      <img src="assets/hero.jpg" class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] rounded-[inherit]" />
+      <div>
+        <h2 class="text-[22px] mt-0 mr-[30px] mb-[10px] font-semibold">Muhammad Fadil</h2>
+        <h3 class="text-[14px] m-0 text-gray-100 font-medium">Frontend Developer</h3>
+        <p class="text-[13px] mb-[30px] text-gray-300">
+          Transforming ideas into realities, creating interfaces that inspire
+          and engage users dreams. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quos blanditiis nisi
+          adipisci cum fugiat dolor enim quia? Quos mollitia nam ducimus quae aut fugiat molestiae nostrum sit dolore
+          at.
+        </p>
+        <div class="socials flex items-center gap-2">
+          <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
+            <i
+              class="fa-brands fa-instagram hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+          </button>
+          <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
+            <i
+              class="fa-brands fa-facebook hover:text-secondary hover:bg-primary transitionrelative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+          </button>
+          <button class="relative rounded-none bg-transparent text-[f8f8f8] p-0">
+            <i
+              class="fa-brands fa-twitter hover:text-secondary hover:bg-primary transition relative z-[1] bg-[#3f3b39] grid place-items-center text-[24px] w-[50px] h-[50px] rounded-[40px]"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-duration="3000"
+      class="card flex items-center sm:flex-row-reverse w-[75vw] bg-[#252524] rounded-3xl "
+      style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out; ">
+      <img src="assets/main.jpg"
+        class="max-w-[280px] w-[36vw] h-[300px] ml-[-60px] mr-[30px] sm:mr-[-60px] sm:ml-[30px] rounded-[inherit]" />
+      <div class="md:ml-4">
+        <h2 class="text-[22px] mt-0 mr-[30px] mb-[10px] font-semibold">Education</h2>
+        <div class="text-left">
+          <h3 class="text-[14px] m-0 text-gray-100 font-medium">Formal</h3>
+          <ul class="text-[13px] mb-[30px] text-gray-300 list-disc pl-5 space-y-2">
+            <li>
+              Sultan Idris State Islamic University Samarinda: Majoring in Information System <p>Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Officiis, obcaecati pariatur sapiente maiores minima
+                coonstruckysgyat.</p>
+            </li>
+            <li>
+              Muhammadiyah Vocational High School: Majoring in Computer and Network Engineering <p>Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Quod eum incidunt quasi illum, quia laborum.</p>
+            </li>
+            <li>
+              Al-Istiqomah Junior High School <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                fugit suscipit provident culpa accusantium repellat.</p>
+            </li>
+          </ul>
+
+          <h3 class="text-[14px] m-0 text-gray-100 font-medium">Non-Formal</h3>
+          <ul class="text-[13px] mb-[30px] text-gray-300 list-disc pl-5 space-y-2">
+            <li>
+              Dicoding Academy <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis architecto fugit
+                aliquid blanditiis.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BAGIAN SKILLS PAGE -->
+    <section id="skills" class="bg-transparent w-[75vw] flex gap-7 mb-14">
+
+      <div data-aos="fade-right" data-aos-duration="3000"
+        class="container mx-auto px-6 text-start bg-[#252524] py-10 rounded-3xl shadow-lg"
+        style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+        <h2 class="text-[22px] font-semibold text-white mb-10 text-center">Skills</h2>
+        <div class="skil gap-3 flex flex-wrap">
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 border-white px-4 py-2 space-x-2 transition hover:border-orange-500 hover:text-orange-500">
+            <i class="fa-brands fa-html5 text-xl text-orange-500"></i>
+            <p>HTML</p>
+          </div>
+          <div
+            class="inline-flex items-center rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-500 hover:text-blue-500">
+            <i class="fa-brands fa-css3 text-xl text-blue-500"></i>
+            <p>CSS</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-yellow-400 hover:text-yellow-400">
+            <i class="fa-brands fa-js text-xl text-yellow-400"></i>
+            <p>Javascript</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-500 hover:text-blue-500">
+            <img src="assets/typescript-icon-svgrepo-com.svg" alt="ts" class="h-6 w-6">
+            <p>Typescript</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2  transition hover:border-blue-400 hover:text-blue-400">
+            <img src="assets/tailwind.svg" alt="Tailwind CSS" class="h-6 w-6">
+            <p>Tailwind CSS</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-green-400 hover:text-green-400">
+            <i class="fa-brands fa-node text-xl text-green-400"></i>
+            <p>Node Js</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-400 hover:text-blue-400">
+            <i class="fa-brands fa-react text-xl text-blue-400"></i>
+            <p>React Js</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-[#777BB4] hover:text-[#777BB4]">
+            <i class="fa-brands fa-php text-xl text-[#777BB4]"></i>
+            <p>PHP</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-[#FF2D20] hover:text-[#FF2D20]">
+            <i class="fa-brands fa-laravel text-xl text-[#FF2D20]"></i>
+            <p>Laravel</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-yellow-500 hover:text-yellow-500">
+            <img src="assets/python-svgrepo-com.svg" alt="piton" class="h-6 w-6">
+            <p>Python</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" data-aos-duration="3000"
+        class="container mx-auto px-6 text-start bg-[#252524] py-10 rounded-3xl shadow-lg"
+        style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+        <h2 class="text-[22px] font-semibold text-white mb-10 text-center">Tools</h2>
+        <div class="skil gap-3 flex flex-wrap">
+
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-[#F05032] hover:text-[#F05032]">
+            <i class="fa-brands fa-git-alt text-xl text-[#F05032]"></i>
+            <p>Git</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2  transition hover:border-blue-900 hover:text-blue-900">
+            <i class="fa-brands fa-github text-xl text-white"></i>
+            <p>Github</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-200 hover:text-blue-200">
+            <img src="assets/mysql.svg" alt="mysql" class="h-6 w-6">
+            <p>MySql</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-500 hover:text-blue-500">
+            <i class="fa-brands fa-docker text-xl text-blue-500"></i>
+            <p>Docker</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-orange-500 hover:text-orange-500">
+            <i class="fa-brands fa-aws text-xl text-orange-500"></i>
+            <p>AWS</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-pink-500 hover:text-pink-500">
+            <img src="assets/figma-svgrepo-com.svg" alt="figma" class="h-6 w-6">
+            <p>Figma</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-400 hover:text-blue-400">
+            <img src="assets/vs-code-svgrepo-com.svg" alt="vscode" class="h-6 w-6">
+            <p>VS Code</p>
+          </div>
+          <div
+            class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-[#4DCC8B] hover:text-[#4DCC8B]">
+            <img src="assets/chatgpt-4.svg" alt="vscode" class="h-6 w-6">
+            <p>Chat GPT</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+  <!-- BAGIAN SERVICE PAGE -->
+
+  <section id="service" class="relative w-full h-auto bg-[#252524] halamanEmpat">
+    <div class="curve-second absolute -top-20 md:-top-36 lg:-top-44 w-full ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
+        <path fill="#252524" fill-opacity="1" d="M0,128 C480,224 960,32 1440,128 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+    <section class="containerr mx-auto px-4 py-8 bg-transparent w-[90vw]  ">
+      <h1 class="text-2xl text-white font-bold text-center mb-8 mt-8 lg:mt-32">Our Services</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 ">
+
+
+
+
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/web3.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web3 Development</h2>
+            <p class="text-gray-600">Develop DApps and implement smart contracts.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/design.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web Designs</h2>
+            <p class="text-gray-600">Craft modern, user-friendly website designs.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/fe.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Front end Development</h2>
+            <p class="text-gray-600">Build interactive and responsive user interfaces.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/be.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Back end Development</h2>
+            <p class="text-gray-600">Create robust servers and APIs for web apps.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/seoo.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">SEO Optimization</h2>
+            <p class="text-gray-600">Optimize your website for better search engine rankings</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/websec.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web Security</h2>
+            <p class="text-gray-600">Protect your website from cyber threats and vulnerabilities.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/webapp.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web App Development</h2>
+            <p class="text-gray-600">Develop DApps and implement smart contracts.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/deploy.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Hosting & Deployment</h2>
+            <p class="text-gray-600">Set up hosting and deploy your web application.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/consul.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">IT Consultant</h2>
+            <p class="text-gray-600">Provide strategic IT solutions for your business.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div id="modal" class="modal backdrop-brightness-50 w-full h-screen fixed top-0 left-0 z-50 hidden ">
+      <div
+        class="p-6 bg-gradient-to-r from-white  to-gray-100 w-[90%] max-w-2xl h-auto rounded-lg shadow-lg relative m-auto top-[15%] md:top-[25%] transform scale-95 transition-transform duration-300 ease-in-out">
+
+        <button onclick="closeModal()"
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 focus:outline-none">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">UI/UX Design</h2>
+          <p class="text-gray-600 mb-6">
+            Build high-quality and scalable web applications. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequuntur, deserunt similique nemo ipsam repellat inventore eligendi tempore quisquam maxime ducimus non
+            quos cum quia libero mollitia. A doloribus ipsum fugit!
+          </p>
+
+          <button class="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition-all">
+            Order Now
+          </button>
+        </div>
+      </div>
     </div>
 
 
-    <script src="js/script.js"></script>
-    <script src="js/particle.js"></script>
+  </section>
+
+
+  <div class="tumbal relative w-full h-20 md:h-28 lg:h-32 bg-[#252524] ">
+
+  </div>
+
+  <!-- BAGIAN PORTO PAGE -->
+
+
+  <section id="portofolio" class="relative w-full  bg-primary halamanTiga">
+    <div class="curve-second absolute -top-20 md:-top-36 lg:-top-48 w-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
+        <path fill="#1573FF" fill-opacity="1"
+          d="M0,160 C180,240 360,80 540,160 C720,240 900,80 1080,160 C1260,240 1440,80 1440,80 L1440,320 L0,320 Z">
+        </path>
+      </svg>
+    </div>
+    <div class="w-[75vw] mx-auto flex items-center justify-center">
+      <div class="flex flex-col items-center justify-center  px-6 text-center ">
+        <h2 class="text-2xl text-white font-bold text-center mb-8 mt-8 ">Portofolio</h2>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20">
+          <!-- Project Card 1 -->
+          <div
+            class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg"
+            style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+            <img src="https://via.placeholder.com/300" alt="Project 1" class="rounded-md w-full h-48 object-cover mb-4">
+            <h3 class="text-xl font-semibold mb-2">MUFADEV Website</h3>
+            <p class="text-gray-600 text-sm mb-4">Short description about the project goes here. It explains the purpose
+              and technology used.</p>
+            <a href="https://personnal-website-topaz.vercel.app/" class="text-primary font-medium hover:underline">View
+              Details</a>
+          </div>
+          <!-- Project Card 2 -->
+          <div
+            class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg"
+            style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+            <img src="https://via.placeholder.com/300" alt="Project 2" class="rounded-md w-full h-48 object-cover mb-4">
+            <h3 class="text-xl font-semibold mb-2">Violet Evergarden Profile</h3>
+            <p class="text-gray-600 text-sm mb-4">Tugas akhir dari kelas pemrograman web dasar Dicoding Academy,
+              menggunakan semantik HTML dan Responsif CSS</p>
+            <a href="https://mufacoderz.github.io/Website-Projek-Dicoding/"
+              class="text-primary font-medium hover:underline">View Details</a>
+          </div>
+          <!-- Project Card 3 -->
+          <div
+            class="bg-[#f9f9f9] shadow-md rounded-lg p-5 transform transition-transform hover:scale-105 hover:shadow-lg"
+            style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.2); transition: all 0.3s ease-in-out;">
+            <img src="https://via.placeholder.com/300" alt="Project 3" class="rounded-md w-full h-48 object-cover mb-4">
+            <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+            <p class="text-gray-600 text-sm mb-4">Short description about the project goes here. It explains the purpose
+              and technology used.</p>
+            <a href="#" class="text-primary font-medium hover:underline">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- BAGIAN CONTACT PAGE -->
+
+  <section id="contact" class=" relative w-full h-screen bg-green-500 halamanLima ">
+    <div class="flex justify-center items-center h-full text-black text-2xl">
+      Halaman kelima
+    </div>
+  </section>
+
+
+  <!-- BAGIAN FOOTER -->
+  <footer>
+
+  </footer>
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: function () {
+        // Nonaktifkan AOS jika lebar layar kurang dari 1024px
+        return window.innerWidth < 1024;
+      }
+    });
+  </script>
+
+
+
 
 </body>
 
