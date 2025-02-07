@@ -112,3 +112,263 @@ Kode Bagian Skill dan Tools
     </section>
 
 ================================================================================================================================================
+
+
+
+
+
+
+Bagian Service
+================================================================================================================================================
+
+<section id="service" class="relative w-full h-auto bg-[#252524] halamanEmpat">
+    <div class="curve-second absolute -top-20 md:-top-36 lg:-top-44 w-full ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
+        <path fill="#252524" fill-opacity="1" d="M0,128 C480,224 960,32 1440,128 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+    <section class="containerr mx-auto px-4 py-8 bg-transparent w-[90vw]  ">
+      <h1 class="text-2xl text-white font-bold text-center mb-8 mt-8 sm:mt-36 lg:mt-32">Our Services</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 ">
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/web3.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web3 Development</h2>
+            <p class="text-gray-600">Develop DApps and implement smart contracts.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/design.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web Designs</h2>
+            <p class="text-gray-600">Craft modern, user-friendly website designs.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/fe.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Front end Development</h2>
+            <p class="text-gray-600">Build interactive and responsive user interfaces.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/be.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Back end Development</h2>
+            <p class="text-gray-600">Create robust servers and APIs for web apps.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/seoo.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">SEO Optimization</h2>
+            <p class="text-gray-600">Optimize your website for better search engine rankings</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/websec.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web Security</h2>
+            <p class="text-gray-600">Protect your website from cyber threats and vulnerabilities.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/webapp.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Web App Development</h2>
+            <p class="text-gray-600">Develop DApps and implement smart contracts.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/deploy.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">Hosting & Deployment</h2>
+            <p class="text-gray-600">Set up hosting and deploy your web application.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-duration="4000"
+          class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
+          style="
+          box-shadow: 0px 10px 20px rgba(190, 190, 190, 0.3), 0px 6px 6px rgba(191, 190, 190, 0.2); transition: all 0.3s ease-in-out">
+          <!-- Gambar -->
+          <div class="relative">
+            <img src="assets/consul.jpg" alt="Web3" class="w-full h-[180px] object-cover md:h-auto">
+          </div>
+
+          <!-- Konten Teks -->
+          <div class="flex-1 py-2 px-3 md:p-4">
+            <h2 class="text-lg font-bold mb-1 sm:mb-2">IT Consultant</h2>
+            <p class="text-gray-600">Provide strategic IT solutions for your business.</p>
+          </div>
+
+          <!-- Tombol Learn More -->
+          <div role="button" onclick="openModal()"
+            class="px-4 py-2 bg-blue-100 text-primary font-semibold text-center cursor-pointer hover:bg-blue-200 transition-all">
+            Learn More
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div id="modal" class="modal backdrop-brightness-50 w-full h-screen fixed top-0 left-0 z-50 hidden ">
+      <div
+        class="p-6 bg-gradient-to-r from-white  to-gray-100 w-[90%] max-w-2xl h-auto rounded-lg shadow-lg relative m-auto top-[15%] md:top-[25%] transform scale-95 transition-transform duration-300 ease-in-out">
+
+        <button onclick="closeModal()"
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 focus:outline-none">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">UI/UX Design</h2>
+          <p class="text-gray-600 mb-6">
+            Build high-quality and scalable web applications. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequuntur, deserunt similique nemo ipsam repellat inventore eligendi tempore quisquam maxime ducimus non
+            quos cum quia libero mollitia. A doloribus ipsum fugit!
+          </p>
+
+          <button class="bg-blue-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-600 transition-all">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+================================================================================================================================================
