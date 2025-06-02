@@ -51,7 +51,7 @@ function closeModalService() {
 
   
 
-//===============================================CODE BY CHATGPT=========================================================
+//=======================================RUNNING TEXT CODE BY CHATGPT=========================================================
 // animasi perofesinya
 // Profession texts array
 const professions = [
