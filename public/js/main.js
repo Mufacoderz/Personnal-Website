@@ -74,3 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector("nav");
     nav.classList.remove("-translate-y-full", "opacity-0");
   });
+
+  function showModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+  function closeModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }

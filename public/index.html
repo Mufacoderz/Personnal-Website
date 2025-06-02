@@ -222,7 +222,7 @@
             <i class="fa-brands fa-js text-xl text-yellow-400"></i>
             <p>Javascript</p>
           </div>
-          
+
           <div
             class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2  transition hover:border-blue-400 hover:text-blue-400">
             <img src="assets/tailwind.svg" alt="Tailwind CSS" class="h-6 w-6">
@@ -238,18 +238,18 @@
             <i class="fa-brands fa-react text-xl text-blue-400"></i>
             <p>React Js</p>
           </div>
-          
+
           <div class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-gray-400 hover:text-gray-400">
             <img src="assets/icons8-express-js.svg" alt="Express.js" class="h-6 w-6">
             <p>Express Js</p>
           </div>
-        
+
           <div class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-600 hover:text-blue-600">
             <img src="assets/icons8-c.svg" alt="cpp" class="h-6 w-6">
             <p>C++</p>
           </div>
-        
-        
+
+
         </div>
       </div>
 
@@ -269,7 +269,7 @@
             <i class="fa-brands fa-github text-xl text-white"></i>
             <p>Github</p>
           </div>
-          
+
           <div
             class="inline-flex items-center bg-transparent rounded-full border-2 px-4 py-2 space-x-2 transition hover:border-blue-400 hover:text-blue-400">
             <img src="assets/vs-code-svgrepo-com.svg" alt="vscode" class="h-6 w-6">
@@ -284,7 +284,7 @@
             <img src="assets/icons8-pixellab.svg" alt="PixelLab" class="h-6 w-6 rounded">
             <p>PixelLab</p>
           </div>
-        
+
         </div>
       </div>
     </section>
@@ -489,7 +489,7 @@
             Learn More
           </div>
         </div>
-        
+
         <div data-aos="fade-up" data-aos-duration="4000"
           class="bg-gradient-to-r from-white to-gray-100 shadow-md rounded-lg overflow-hidden hover:scale-[1.03] transition-all duration-300 flex flex-col h-full"
           style="
@@ -556,24 +556,51 @@
   <!-- BAGIAN PORTO PAGE -->
 
 
-  <section id="portofolio" class="relative w-full h-screen bg-primary halamanTiga py-16">
-    <!-- Wave Background
-    <div class="absolute -top-20 md:-top-36 lg:-top-48 w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1440 320">
-        <path fill="#1573FF" fill-opacity="1"
-          d="M0,160 C180,240 360,80 540,160 C720,240 900,80 1080,160 C1260,240 1440,80 1440,80 L1440,320 L0,320 Z">
-        </path>
-      </svg>
-    </div> -->
+  <section id="portofolio" class="relative w-full bg-primary halamanTiga py-16">
+    <h1 class="text-2xl text-white font-bold text-center  mt-4">Portofolio</h1>
+
+    <div class="flex flex-wrap justify-center gap-8 px-6 mt-6">
+      <!-- Projek Card Template -->
+      <div class="w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="assets/Screenshot (1).png" alt="Preview Personal Website" class="w-full h-52 object-cover cursor-pointer" onclick="showModal(this.src)">
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-3">Personal Website</h2>
+          <p class="text-base text-gray-600 mb-4">Projek latihan dengan menggunakan framework Tailwind CSS</p>
+          <a href="https://personnal-website-topaz.vercel.app/" target="_blank" class="text-blue-600 text-sm font-medium underline hover:text-blue-800 transition">Live Demo</a>
+        </div>
+      </div>
   
-    <div class="flex justify-center items-center h-full text-black text-2xl">
-      Halaman kemepat
+      <div class="w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="assets/Screenshot 2025-06-02 181105.png" alt="Preview Al-Qur'an with ReactJs" class="w-full h-52 object-cover cursor-pointer" onclick="showModal(this.src)">
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-3">Al-Qur'an with ReactJs</h2>
+          <p class="text-base text-gray-600 mb-4">Projek Web Al-Qur'an dari Workshop Dunia Coding Academy</p>
+          <a href="https://quran-react-js-rmie.vercel.app/" target="_blank" class="text-blue-600 text-sm font-medium underline hover:text-blue-800 transition">Live Demo</a>
+        </div>
+      </div>
+  
+      <div class="w-96 bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+        <img src="assets/Screenshot 2025-06-02 180709.png" alt="Preview Violet Profile" class="w-full h-52 object-cover cursor-pointer" onclick="showModal(this.src)">
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-3">Violet Profile</h2>
+          <p class="text-base text-gray-600 mb-4">Projek Akhir Kelas Pemrograman Web Dasar Dicoding</p>
+          <a href="https://mufacoderz.github.io/Website-Projek-Dicoding/" target="_blank" class="text-blue-600 text-sm font-medium underline hover:text-blue-800 transition">Live Demo</a>
+        </div>
+      </div>
     </div>
-   
+  
+    <!-- Modal Preview -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+      <div class="relative">
+        <button onclick="closeModal()" class="absolute -top-4 -right-4 bg-white text-black rounded-full p-2 font-bold shadow-md">✕</button>
+        <img id="modalImage" src="" alt="Preview" class="max-w-full max-h-[90vh] rounded-xl shadow-lg">
+      </div>
+    </div>
+
   </section>
-  
-  
-  
+
+
+
 
 
 
@@ -581,7 +608,7 @@
 
   <section id="contact" class=" relative w-full h-screen bg-green-500 halamanLima ">
     <div class="flex justify-center items-center h-full text-black text-2xl">
-      Halaman kelima
+      Halaman kelima certificate
     </div>
   </section>
 
