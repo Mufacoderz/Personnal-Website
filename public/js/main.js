@@ -16,7 +16,42 @@ VANTA.GLOBE({
 });
 
 
+//biar nav nya gk ilang
+document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector("nav");
+    nav.classList.remove("-translate-y-full", "opacity-0");
+  });
 
+//open dan close menu hamburger
+function openNavLink() {
+    document.getElementById("hamburgerNav").style.display = "block";
+}
+function closeNavLink() {
+    document.getElementById("hamburgerNav").style.display = "none";
+}
+
+
+//upen dan close modal service
+function openModalService() {
+    document.getElementById("modal").style.display = "block";
+}
+function closeModalService() {
+    document.getElementById("modal").style.display = "none";
+}
+
+
+//open dan close modal porto
+  function openModalPorto(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+  function closeModalPorto() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+
+  
+
+//===============================================CODE BY CHATGPT=========================================================
 // animasi perofesinya
 // Profession texts array
 const professions = [
@@ -52,33 +87,4 @@ function typeProfession() {
 
 // Start the typing effect
 typeProfession();
-
-
-//open dan close menu hamburger
-function openNavLink() {
-    document.getElementById("hamburgerNav").style.display = "block";
-}
-function closeNavLink() {
-    document.getElementById("hamburgerNav").style.display = "none";
-}
-
-function openModal() {
-    document.getElementById("modal").style.display = "block";
-}
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const nav = document.querySelector("nav");
-    nav.classList.remove("-translate-y-full", "opacity-0");
-  });
-
-  function showModal(src) {
-    document.getElementById('modalImage').src = src;
-    document.getElementById('imageModal').classList.remove('hidden');
-  }
-  function closeModal() {
-    document.getElementById('imageModal').classList.add('hidden');
-  }
+//==========================================================================================================================
