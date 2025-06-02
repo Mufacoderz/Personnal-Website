@@ -129,4 +129,27 @@ html, body {
   animation: slideInLeft 1s ease-in-out;
 }
 
+.dummy{
+  animation: alertDummy 2s infinite alternate;
+}
+
+@keyframes alertDummy{
+  0% {
+    color: white;
+  }
+  20% {
+    color: red;
+  }
+  40%{
+    color: white;
+  }
+  60% {
+    color: red;
+  }
+  80% {
+    color: white;
+  }
+  100%{
+    color: red;
+  }
 }
